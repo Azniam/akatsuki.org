@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap");
+
+body {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+  padding: 5rem 1rem;
+  max-width: 100%;
+  margin: auto;
+}
+
+.section__title {
+  font-size: 50px;
+  font-weight: 500;
+  color: red;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section__subtitle {
+  font-size: 30px;
+  font-style: italic;
+  color: red;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: 'Times New Roman';
+}
+
+nav {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2rem;
+  padding-left: 10rem;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.nav__logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 3rem;
+  border-style: solid;
+  border-width: 5px;
+  border-color: red;
+  
+}
+
+nav ul {
+  padding-right: 10rem;
+  display: none;
+  list-style: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: black;
+  background-color: red;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+header {
+  height: 100vh;
+  background-image: url("konan.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .section__container {
+  height: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__content {
+  align-items: center;
+  color: white;
+}
+
+.header__content h1 {
+  top: 250px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  font-size: 50px;
+  justify-content: center;
+}
+
+.journey__container {
+  background-color: black;
+}
+
+.banner__container {
+  background-image: url(scroll.avif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner__container .section__container {
+  padding: 100px;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: center;
+}
+
+.banner__content {
+  display: inline-block;
+  text-align: left;
+  color: black;
+}
+
+.banner__content h2 {
+  font-family: Georgia;
+  text-align: left;
+  font-size: 100px;
+  font-weight: 400;
+}
+
+.banner__content p {
+  text-align: left;
+  font-size: 30px;
+}
+
+.display__container {
+  background-color: black;
+}
+
+.display__container {
+  text-align: justify;
+  color: white;
+}
+
+.section__summary {
+    font-size: 50px;
+    text-align: center;
+}
+
+.section__subsummary {
+    font-size: 30px;
+}
+
+footer {
+  background-color: gray;
+  color: white;
+}
+
+footer .section__container {
+  display: grid;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+footer h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media (min-width: 640px) {
+  .nav__links {
+    display: flex;
+  }
+
+  header .section__container {
+    justify-content: flex-start;
+  }
+
+  .header__content {
+    max-width: 400px;
+    align-items: flex-start;
+  }
+
+  .header__content p {
+    text-align: left;
+  }
+
+  .journey__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .display__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .display__card {
+    gap: 0;
+  }
+
+  .display__card i {
+    font-size: 1.75rem;
+  }
+
+  .display__card h4 {
+    font-size: 1rem;
+  }
+
+  .display__card p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 786px) {
+  .banner__container .section__container {
+    justify-content: flex-end;
+  }
+
+  .banner__content {
+    align-items: flex-end;
+    text-align: right;
+    max-width: 800px;
+  }
+
+  .display__card {
+    gap: 0.5rem;
+  }
+
+  .display__card i {
+    font-size: 2.5rem;
+  }
+
+  .display__card p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .display__card {
+    gap: 1rem;
+  }
+
+  .display__card i {
+    font-size: 3rem;
+  }
+
+  .display__card h4 {
+    font-size: 1.5rem;
+  }
+
+  .display__card p {
+    font-size: 1rem;
+  }
+}
